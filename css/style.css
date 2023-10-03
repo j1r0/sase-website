@@ -1,5 +1,4 @@
 @import url("https://fonts.googleapis.com/css?family=Montserrat:100,200,300,400,500,600,700,800");
-@import url("https://github.com/j1r0/sase-website/blob/148399c69fa3a8c25b1ccf502695e623a770f684/sase-bkg.png?raw=true");
 
 :root {
   --montserrat: "Montserrat", serif;
@@ -7,6 +6,31 @@
   --secondary-color: #FFCD4D;
   --bkg-color: #F5F5F5;
 }
+
+/*iPad*/
+/* @media only screen and (max-width: 768px){
+  .home__logo-sase {
+    padding-right: 10px;
+    height: 30px;
+  }
+  
+  .home__logo-erau {
+    padding-left: 10px;
+    height: 30px;
+  }
+
+  .home__navbar {
+    font-size: 12px;
+  }
+
+  .home__content h2{
+      font-size: 18px;
+
+  }
+  
+  
+
+} */
 
 
 /*Home*/
@@ -41,16 +65,16 @@
   cursor: pointer;
 }
 
-.logo-sase {
+.home__logo-sase {
   padding-right: 20px;
   height: 60px;
 }
 
-.logo-erau {
+.home__logo-erau {
   padding-left: 20px;
   border-left: 2px solid #ffffffa2;
   border-radius: 20;
-  height: 50px;
+  height: 60px;
 }
 
 .home__navbar ul {
@@ -85,6 +109,9 @@
   transform: translateY(-5px);
 }
 
+
+
+
 .home__content {
   width: 100%;
   position: absolute;
@@ -92,11 +119,11 @@
   transform: translateY(-50%);
   text-align: center;
   color:#fff;
-  font-size: 2em;
+  font-size: 20px;
 }
 
 .home__content img {
-  width: 70%;
+  width:  60%;
   margin: 0 0 20px 0;
 }
 
@@ -169,7 +196,7 @@ button:hover span{
 
 .about__content p {
 margin: 0 10% 0 10%;
-  font-size: 30px;
+  font-size: 25px;
   text-align: left;
 
 
