@@ -43,6 +43,10 @@
   font-family: var(--montserrat);
   scroll-behavior: smooth !important;
 }
+a {
+  color: white;
+  text-decoration: none;
+}
 
 .home {
   scroll-behavior: smooth;
@@ -57,19 +61,32 @@
   background-position: center;
 }
 
+html:not([data-scroll='0']) {
+  
+  .home__navbar {
+    position: fixed;
+    z-index: 20;
+    top: 0;
+    background-color: rgba(0, 0, 0, 0.345);
+    box-shadow: 0 0 1em rgba(0, 0, 0, .4);
+  }
+  
+}
+
+
 .home__navbar {
-  width: 90%;
+  width: 100%;
   height: auto;
-  margin: auto;
-  padding:25px 0;
+  padding:20px 0;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  
+  transition: all .25s;
 }
 
 .home__logo {
   cursor: pointer;
+  padding: 0 0 0 3vw;
   
 }
 
@@ -87,8 +104,7 @@
 
 .home__navbar ul {
   list-style: none;
-  margin: 0 20px;
-  padding: 0;
+  
   overflow: hidden;
 }
 
@@ -102,7 +118,7 @@
   display: inline-block;
   color: #fff;
   text-align: center;
-  padding: 8px 12px;
+  padding: 0 3vw 0 0;
   text-decoration: none;
   z-index: 0;
 }
@@ -134,6 +150,8 @@
 
 .home__content button {
   width: 10vw;
+  min-width: 100px;
+  min-height: 40px;
   padding: 15px 0;
   text-align: center;
   margin: 20px 2vw;
@@ -144,7 +162,8 @@
   color : #fff;
   position: relative;
   overflow: hidden;
-  font-size: 1vw;
+
+  font-size: 12px;
 }
 
 .home__content #button1 {
@@ -170,11 +189,6 @@
   transform: translateY(-5px);
   background-size: 160%;
 }
-
-
-
-
-
 
 
 
@@ -370,8 +384,8 @@ radial-gradient(at 90% 22%, hsla(24,55%,86%,1) 0px, transparent 50%);
 
 
 .back-button button {
-  width: 50px;
-  height: 50px;
+  width: 5vw;
+  height: 5vw;
   text-align: center;
   border-radius: 50%;
   font-weight: bold;
@@ -379,8 +393,8 @@ radial-gradient(at 90% 22%, hsla(24,55%,86%,1) 0px, transparent 50%);
   background: transparent;
   border: none;
   position: fixed;
-  bottom: 2%;
-  left: 95%;
+  bottom: 1vw;
+  right: 2vw;
   transition: 0.5s ease;
   
   
@@ -388,7 +402,7 @@ radial-gradient(at 90% 22%, hsla(24,55%,86%,1) 0px, transparent 50%);
 
 .back-button img {
   position: absolute;
-  width: 50px;
+  width: 5vw;
   transform: translate(-50%, -50%);
   border-radius: 50%;
   border: none;
