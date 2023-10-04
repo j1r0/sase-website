@@ -6,6 +6,26 @@
   --secondary-color: #FFCD4D;
   --bkg-color: #F5F5F5;
 
+  --gradient-base: hsla(227,0%,71%,1);
+
+  --gradient-1: radial-gradient(at 100% 100%, hsla(24,55%,86%,1) 0px, transparent 50%),
+  radial-gradient(at 0% 91%, hsla(28,91%,54%,1) 0px, transparent 50%),
+  radial-gradient(at 6% 10%, hsla(203,17%,26%,1) 0px, transparent 50%),
+  radial-gradient(at 79% 74%, hsla(13,48%,45%,1) 0px, transparent 50%),
+  radial-gradient(at 9% 33%, hsla(205,17%,32%,1) 0px, transparent 50%),
+  radial-gradient(at 88% 19%, hsla(27,29%,43%,1) 0px, transparent 50%),
+  radial-gradient(at 80% 100%, hsla(26,51%,62%,1) 0px, transparent 50%);
+
+  --gradient-2:radial-gradient(at 0% 0%, hsla(235,10%,43%,1) 0px, transparent 50%),
+  radial-gradient(at 90% 42%, hsla(205,17%,32%,1) 0px, transparent 50%),
+  radial-gradient(at 4% 95%, hsla(13,48%,45%,1) 0px, transparent 50%),
+  radial-gradient(at 3% 22%, hsla(27,29%,43%,1) 0px, transparent 50%),
+  radial-gradient(at 36% 0%, hsla(26,51%,62%,1) 0px, transparent 50%),
+  radial-gradient(at 79% 100%, hsla(27,91%,54%,1) 0px, transparent 50%),
+  radial-gradient(at 85% 1%, hsla(205,17%,32%,1) 0px, transparent 50%),
+  radial-gradient(at 100% 18%, hsla(203,17%,26%,1) 0px, transparent 50%),
+  radial-gradient(at 100% 100%, hsla(24,55%,86%,1) 0px, transparent 50%);
+
   --lerp-0: 1;
   --lerp-1: 0.5787037;
   --lerp-2: 0.2962963;
@@ -15,38 +35,13 @@
   --lerp-6: 0;
 }
 
-/*iPad*/
-/* @media only screen and (max-width: 768px){
-  .home__logo-sase {
-    padding-right: 10px;
-    height: 30px;
-  }
-  
-  .home__logo-erau {
-    padding-left: 10px;
-    height: 30px;
-  }
-
-  .home__navbar {
-    font-size: 12px;
-  }
-
-  .home__content h2{
-      font-size: 18px;
-
-  }
-  
-  
-
-} */
-
-
 /*Home*/
 
-*{
+*, html{
   margin: 0;
   padding: 0;
   font-family: var(--montserrat);
+  scroll-behavior: smooth !important;
 }
 
 .home {
@@ -75,18 +70,19 @@
 
 .home__logo {
   cursor: pointer;
+  
 }
 
 .home__logo-sase {
-  padding-right: 20px;
-  height: 60px;
+  padding-right: 1vw;
+  height: 4.5vw;
 }
 
 .home__logo-erau {
-  padding-left: 20px;
+  padding-left: 1vw;
   border-left: 2px solid #ffffffa2;
   border-radius: 20;
-  height: 60px;
+  height: 4.5vw;
 }
 
 .home__navbar ul {
@@ -128,7 +124,7 @@
   transform: translateY(-50%);
   text-align: center;
   color:#fff;
-  font-size: 20px;
+  font-size: 2vw;
 }
 
 .home__content img {
@@ -137,50 +133,50 @@
 }
 
 .home__content button {
-  width: 200px;
+  width: 10vw;
   padding: 15px 0;
   text-align: center;
-  margin: 20px 10px;
-  border-radius: 25px;
+  margin: 20px 2vw;
+  border-radius: 4vw;
   font-weight: bold;
   cursor: pointer;
   background: transparent;
   color : #fff;
   position: relative;
   overflow: hidden;
+  font-size: 1vw;
 }
 
 .home__content #button1 {
-  border: 2px solid var(--primary-color);
+  border: none;
+  background-color: var(--gradient-base);
+  background-image: var(--gradient-1);
+  transition: all 0.5s ease;
+  
 }
 
-.home__content #button2 {
-  border: 2px solid var(--secondary-color);
+.home__content #button2{
+  border: none;
+  background-color: var(--gradient-base);
+  background-image: var(--gradient-2);
+  transition: all 0.5s ease;
 }
 
-.home__content span {
-  height: 100%;
-  width: 0;
-  border-radius: 25px;
-  position: absolute;
-  bottom: 0;
-  z-index: -1;
-  transition: 0.5s;
+.home__content #button1:hover{
+  transform: translateY(-5px);
+  background-size: 160%;
+}
+.home__content #button2:hover{
+  transform: translateY(-5px);
+  background-size: 160%;
 }
 
-.spanButton1{
-  background: var(--primary-color);
-  left: 0;
-}
 
-.spanButton2 {
-  background: var(--secondary-color);
-  right: 0;
-}
 
-button:hover span{
-  width: 100%;
-}
+
+
+
+
 
 /*About*/
 
@@ -211,12 +207,12 @@ button:hover span{
 
 .about__content h1 {
   margin: 0 10% 20px 10%;
-  font-size: 4em;
+  font-size: 5vw;
 }
 
 .about__content p {
   margin: 0 10% 0 10%;
-  font-size: 25px;
+  font-size: 2vw;
   text-align: left;
 }
 
@@ -251,7 +247,7 @@ align-items: center;
 
 .events__content h1 {
   margin: 0 10% 20px 10%;
-  font-size: 4em;
+  font-size: 5vw;
 }
 
 .events__content p {
@@ -267,19 +263,23 @@ align-items: center;
   text-align: center;
   display: flex;
   width: calc(80% - 2rem);
-  padding: 0;
+  height: 30vw;
+  padding:0;
   margin: 0;
   list-style-type: none;
 }
 
 .events__img li {
   padding: 0;
+  
+  
 }
 
 .events__img img {
   max-width: 100%;
   width: 100%;
-  object-fit: cover;
+  height: 100%;
+  object-fit:cover;
   transition: all 0.2s ease;
 }
 
@@ -293,7 +293,7 @@ align-items: center;
 }
 
 .events__img li {
-  flex: calc(0.1 + (var(--active-lerp, 0) * 1));
+  flex: calc(0.1 + (var(--active-lerp, 0) * 2));
   transition: flex 0.2s ease;
 }
 
@@ -301,37 +301,6 @@ align-items: center;
   --active-lerp: var(--lerp-0);
   z-index: 7;
 }
-.events__img li:has( + li:is(:hover, :focus-within)),
-li:is(:hover, :focus-within) + li {
-  --active-lerp: var(--lerp-1);
-  z-index: 6;
-}
-.events__img li:has( + li + li:is(:hover, :focus-within)),
-li:is(:hover, :focus-within) + li + li {
-  --active-lerp: var(--lerp-2);
-  z-index: 5;
-}
-.events__img li:has( + li + li + li:is(:hover, :focus-within)),
-li:is(:hover, :focus-within) + li + li + li {
-  --active-lerp: var(--lerp-3);
-  z-index: 4;
-}
-.events__img li:has( + li + li + li + li:is(:hover, :focus-within)),
-li:is(:hover, :focus-within) + li + li + li + li {
-  --active-lerp: var(--lerp-4);
-  z-index: 3;
-}
-.events__img li:has( + li + li + li + li + li:is(:hover, :focus-within)),
-li:is(:hover, :focus-within) + li + li + li + li + li {
-  --active-lerp: var(--lerp-5);
-  z-index: 2;
-}
-.events__img li:has( + li + li + li + li + li + li:is(:hover, :focus-within)),
-li:is(:hover, :focus-within) + li + li + li + li + li + li {
-  --active-lerp: var(--lerp-6);
-  z-index: 1;
-}
-
 
 
 /* Leadership*/
@@ -355,6 +324,7 @@ radial-gradient(at 90% 22%, hsla(24,55%,86%,1) 0px, transparent 50%);
   padding-top: 30px;
   padding-bottom: 30px;
   scroll-behavior: smooth;
+
 }
 .leadership__content {
   position: relative;
@@ -364,7 +334,7 @@ radial-gradient(at 90% 22%, hsla(24,55%,86%,1) 0px, transparent 50%);
 
 .leadership__content h1 {
   margin: 0 10% 20px 10%;
-  font-size: 4em;
+  font-size: 5vw;
 }
 
 .leadership__img {
@@ -372,6 +342,7 @@ radial-gradient(at 90% 22%, hsla(24,55%,86%,1) 0px, transparent 50%);
   left:50%;
   transform: translateX(-50%);
   text-align: center;
+
   
 }
 
@@ -387,18 +358,17 @@ radial-gradient(at 90% 22%, hsla(24,55%,86%,1) 0px, transparent 50%);
 
   /* Add shadows to create the "card" effect */
   box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
-  transition: 0.3s;
+  transition: 0.5s ease;
 }
 
 
 /* On mouse-over, add a deeper shadow */
 .leadership__img li:hover {
   box-shadow: 0 8px 16px 0 rgba(0,0,0,0.5);
+  transform: scale(1.1);
 }
 
-.back-button {
-  
-}
+
 .back-button button {
   width: 50px;
   height: 50px;
@@ -437,4 +407,5 @@ radial-gradient(at 90% 22%, hsla(24,55%,86%,1) 0px, transparent 50%);
 .back-button:after{
   transition: 0.5s;
 }
+
 
