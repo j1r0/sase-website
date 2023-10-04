@@ -61,6 +61,39 @@ a {
   background-position: center;
 }
 
+
+html:is([data-scroll='0']) {
+
+  .back-button button{
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    border-radius: 50%;
+    font-weight: bold;
+    background: transparent;
+    border: none;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    transition: 0.5s ease;
+    opacity: 0;
+
+  }
+
+
+  .back-button img {
+    position: absolute;
+    width: 50px;
+    transform: translate(-50%, -50%);
+    border-radius: 50%;
+    border: none;
+    overflow: hidden;
+    text-align: center;
+  }
+
+
+}
+
 html:not([data-scroll='0']) {
   
   .home__navbar {
@@ -70,6 +103,46 @@ html:not([data-scroll='0']) {
     background-color: rgba(0, 0, 0, 0.345);
     box-shadow: 0 0 1em rgba(0, 0, 0, .4);
   }
+
+  .back-button button {
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    border-radius: 50%;
+    font-weight: bold;
+    background: transparent;
+    border: none;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    opacity: 1;
+    transition: opacity 0.5s;
+
+    
+  }
+
+  .back-button img {
+    position: absolute;
+    width: 50px;
+    transform: translate(-50%, -50%);
+    border-radius: 50%;
+    border: none;
+    overflow: hidden;
+    text-align: center;
+    transition: 0.5s ease;
+    
+  }
+  
+  .back-button button:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 6px 0 rgba(0,0,0,0.2);
+    
+  }
+  
+  .back-button:after{
+    transition: 0.5s ease;
+  }
+  
   
 }
 
@@ -121,6 +194,7 @@ html:not([data-scroll='0']) {
   padding: 0 3vw 0 0;
   text-decoration: none;
   z-index: 0;
+  font-size: 18px;
 }
 .home__navbar ul li{
   list-style-type: none;
@@ -139,20 +213,28 @@ html:not([data-scroll='0']) {
   top: 50%;
   transform: translateY(-50%);
   text-align: center;
+  font-size: min(20px, 1.8vw);
   color:#fff;
-  font-size: 2vw;
+  
 }
 
 .home__content img {
-  width:  60%;
+  width:  70vw;
+  max-width: 800px;
   margin: 0 0 20px 0;
 }
 
+
+.home__content form{
+  display: inline;
+}
+
+
 .home__content button {
-  width: 10vw;
-  min-width: 100px;
-  min-height: 40px;
-  padding: 15px 0;
+  width: 12vw;
+  min-width: 180px;
+  min-height: 50px;
+  padding: 15px 20px;
   text-align: center;
   margin: 20px 2vw;
   border-radius: 4vw;
@@ -160,11 +242,11 @@ html:not([data-scroll='0']) {
   cursor: pointer;
   background: transparent;
   color : #fff;
-  position: relative;
   overflow: hidden;
-
-  font-size: 12px;
+  font-size: 20px;
 }
+
+
 
 .home__content #button1 {
   border: none;
@@ -383,43 +465,7 @@ radial-gradient(at 90% 22%, hsla(24,55%,86%,1) 0px, transparent 50%);
 }
 
 
-.back-button button {
-  width: 5vw;
-  height: 5vw;
-  text-align: center;
-  border-radius: 50%;
-  font-weight: bold;
-  cursor: pointer;
-  background: transparent;
-  border: none;
-  position: fixed;
-  bottom: 1vw;
-  right: 2vw;
-  transition: 0.5s ease;
-  
-  
-}
 
-.back-button img {
-  position: absolute;
-  width: 5vw;
-  transform: translate(-50%, -50%);
-  border-radius: 50%;
-  border: none;
-  overflow: hidden;
-  text-align: center;
 
-  
-}
-
-.back-button button:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 4px 6px 0 rgba(0,0,0,0.2);
-  
-}
-
-.back-button:after{
-  transition: 0.5s;
-}
 
 
