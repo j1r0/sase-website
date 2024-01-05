@@ -3,213 +3,544 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>SASE @ ERAU-DB</title>
-    <link rel="stylesheet" href="/css/style.css" />
+    <link rel="stylesheet" href="fontawesome-5.5/css/all.min.css" />
+    <link rel="stylesheet" href="slick/slick.css">
+    <link rel="stylesheet" href="slick/slick-theme.css">
+    <link rel="stylesheet" href="magnific-popup/magnific-popup.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/tooplate-infinite-loop.css" />
+
   </head>
-  <body>
-    <section class="home" id="home">
-      <div class="home__banner">
-        <div class="home__navbar">
-          <div class="home__logo">
+  <body>    
+    <!-- Hero section -->
+    <section id="home" class="text-white tm-font-big tm-parallax">
+      <!-- Navigation -->
+      <nav class="navbar navbar-expand-md tm-navbar" id="tmNav">              
+        <div class="container">   
+          <div class="tm-next">
+                        <div class="home__logo">
             <img src="/assets/sase-logo-2.png" class="home__logo-sase" />
             <img src="/assets/erau-logo.png" class="home__logo-erau" />
           </div>
-          <ul>
-            <li><a href="#home">HOME</a></li>
-            <li><a href="#about">ABOUT</a></li>
-            <li><a href="#events">EVENTS</a></li>
-            <li><a href="#leadership">LEADERSHIP</a></li>
-          </ul>
+          </div>             
+          
+          <button class="navbar-toggler" type="checkbox" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="fas fa-bars navbar-toggler-icon"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ml-auto">
+              <li class="nav-item">
+                  <a class="nav-link tm-nav-link" href="#home">Home</a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link tm-nav-link" href="#whoweare">Who We Are</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link tm-nav-link" href="#leadership">Leadership</a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link tm-nav-link" href="#gallery">Gallery</a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link tm-nav-link" href="#contact">Contact</a>
+              </li>                    
+            </ul>
+          </div>        
         </div>
-        <div class="home__content">
+      </nav>
+      
+      <div class="text-center tm-hero-text-container">
+        <div class="tm-hero-text-container-inner">
           <img src="/assets/sase-logo-1.png" class="logo-big" />
           <h2>EMBRACING DIVERSITY, CULTIVATING SUCCESS</h2>
-          <div class="home__content-buttons">
-            <form action="https://campusgroups.erau.edu/SASE/club_signup" target="_blank">
-              <button type="submit" id="button1">
-                JOIN US
-              </button>
-            </form>
-            <form action="https://linktr.ee/saseeraudb" target="_blank">
-              <button type="submit" id="button2">
-                LINKTREE
-              </button>
-            </form>
+        </div>  
+        <div class="tm-hero-text-container-button">
+          <form
+            action="https://campusgroups.erau.edu/SASE/club_signup"
+            target="_blank"
+          >
+            <button type="submit" id="button1">JOIN US</button>
+          </form>
+          <form action="https://linktr.ee/saseeraudb" target="_blank">
+            <button type="submit" id="button2">LINKTREE</button>
+          </form>
+        </div>
+   
+      </div>
+     
+    </section>
+
+    <section id="whoweare" class="tm-section-pad-top">
+      
+      <div class="container">
+
+            <div class="row tm-content-box"><!-- first row -->
+                <div class="col-lg-12 col-xl-12">
+                    <div class="text-center col-12">
+                        <h2 class="tm-text-primary mb-4 tm-section-title">Who We Are</h2>
+                        <p class="mb-4 tm-intro-text">
+                          Join
+            us, and together, we can soar like Eagles and reach for the stars! 
+                        </p>
+                           </div>
+                </div>
+
+            </div><!-- first row -->
+            
+            <div class="row tm-content-box"><!-- second row -->
+        		<div class="col-lg-1">
+                    <i class="fas fa-3x fa-rocket text-center tm-icon"></i>
+                </div>
+                <div class="col-lg-5">
+                  <div class="tm-intro-text-container">
+                      <h2 class="tm-text-primary mb-4">STEM</h2>
+                        <p class="text-justify mb-4 tm-intro-text">
+                          SASE's mission is to
+                          empower individuals of Asian heritage who are pursuing careers in
+                          STEM (Science, Technology, Engineering, and Mathematics) fields. 
+                          Our chapter achieves this by offering mentorship and fostering a supportive 
+                          community for our members' advancements and success.
+                        </p>
+                    </div>
+                </div>
+                
+                <div class="col-lg-1">
+                    <i class="fas fa-3x fa-users text-center tm-icon"></i>
+                </div>
+                <div class="col-lg-5">
+                    <div class="tm-intro-text-container">
+                        <h2 class="tm-text-primary mb-4">Community</h2>
+                        <p class="text-justify mb-4 tm-intro-text">
+                          Our chapter of SASE is more than just a professional
+                          development and diversity club. It is a warm and welcoming place
+                          where you can experience camaraderie, support, and belonging. 
+                          We provide opportunities for our members to make a difference in our community.        </p>            </div>
+                </div>
+
+            </div><!-- second row -->
+            
+            <div class="row tm-content-box"><!-- third row -->
+        		<div class="col-lg-1">
+                    <i class="fas fa-3x fa-globe text-center tm-icon"></i>
+                </div>
+                <div class="col-lg-5">
+                    <div class="tm-intro-text-container">
+                        <h2 class="tm-text-primary mb-4">Diversity & Inclusion</h2>
+                        <p class="text-justify mb-4 tm-intro-text">
+                          Our vibrant and tight-knit community enables us to
+                          organize a diverse range of activities that cater to various
+                          interests. Individuals from all backgrounds are welcome to find 
+                          opportunities to connect, learn, and contribute to our melting 
+                          pot of experiences and perspectives. </p>  </div>                 
+ 
+                    </div>
+
+
+                
+                <div class="col-lg-1">
+                    <i class="fas fa-3x fa-suitcase text-center tm-icon"></i>
+                </div>
+                <div class="col-lg-5">
+                    <div class="tm-intro-text-container">
+                      <h2 class="tm-text-primary mb-4">Professional Development</h2>
+                        <p class="text-justify mb-4 tm-intro-text">
+                          We provide a range of programs and opportunities designed to
+                          support its members in their professional development and help them
+                          excel in their careers. From on-campus networking events to off-campus
+                          professional conventions, we are dedicated to ensure that our members are 
+                          equipped with invaluable resources and experiences.</p>
+                          </div>
+                        
+                    </div>
+                </div>
+            </div><!-- third row -->
+
+        </div>
+      
+    </section>
+    
+    <section id="leadership" class="tm-section-pad-top tm-parallax-2">      
+      <div class="container tm-leadership-content">
+        <div class="row">
+          <div class="col-lg-12 tm-content-box">
+            <h2 class="text-white text-center mb-4 tm-section-title">Leadership</h2>
+            <p class="mx-auto tm-section-desc text-center">
+                Nulla dictum sem non eros euismod, eu placerat tortor lobortis. Suspendisse id velit eu libero pellentesque interdum. Etiam quis congue eros.
+              </p>
+            <div class="mx-auto tm-gallery-container tm-gallery-container-2">
+              <div class="tm-leadership-carousel">
+                <figure class="tm-leadership-item">
+                  <img src="assets/img-avatar.png" alt="Image" class="img-fluid mx-auto">
+                  <figcaption><b>Cindy Nyugen<span></b><p>President</p></span></figcaption>   
+                </figure>
+
+                <figure class="tm-leadership-item">
+                  <img src="assets/img-avatar.png" alt="Image" class="img-fluid mx-auto">
+                  <figcaption><b>Sahil Singh<span></b><p>Vice President</p></span></figcaption>   
+                </figure>
+
+                <figure class="tm-leadership-item">
+                  <img src="assets/img-avatar.png" alt="Image" class="img-fluid mx-auto">
+                  <figcaption><b>Manas Thakkar<span></b><p>Secretary</p></span></figcaption>   
+                </figure>
+
+                <figure class="tm-leadership-item">
+                  <img src="assets/img-avatar.png" alt="Image" class="img-fluid mx-auto">
+                  <figcaption><b>Abdulla Alakberi<span></b><p>Treasurer</p></span></figcaption>   
+                </figure>
+                <figure class="tm-leadership-item">
+                  <img src="assets/img-avatar.png" alt="Image" class="img-fluid mx-auto">
+                  <figcaption><b>Megan Chann<span></b><p>Public Relations</p></span></figcaption>   
+                </figure>
+                <figure class="tm-leadership-item">
+                  <img src="assets/img-avatar.png" alt="Image" class="img-fluid mx-auto">
+                  <figcaption><b>Bhumi Hamal<span></b><p>Events Coordinator</p></span></figcaption>   
+                </figure>
+
+                <figure class="tm-leadership-item">
+                  <img src="assets/img-avatar.png" alt="Image" class="img-fluid mx-auto">
+                  <figcaption><b>Jim Pamplona<span></b><p>Webmaster</p></span></figcaption>                          
+                </figure>
+              </div>
+            </div>
           </div>
         </div>
       </div>
+      <div class="tm-bg-overlay"></div>
     </section>
-
-    <section class="about" id="about">
-      <div class="about__content">
-        <h1>Who We Are</h1>
-        <p>
-          The Society of Asian Scientists and Engineers (SASE) is a national
-          non-profit organization in the United States with a mission to empower
-          individuals of Asian heritage who are pursuing careers in STEM
-          (Science, Technology, Engineering, and Mathematics) fields. SASE
-          provides a range of programs and opportunities designed to support its
-          members in their professional development and help them excel in their
-          careers.
-          <br />
-          <br />
-          At the Embry-Riddle Aeronautical University @ Daytona Beach (ERAU-DB)
-          chapter of SASE, we take pride in elevating the college experience.
-          Our vibrant and tight-knit community enables us to organize a diverse
-          range of activities that cater to various interests. From professional
-          development workshops and leadership seminars to volunteering and
-          social events, we strive to create an engaging environment filled with
-          inclusivity.
-          <br />
-          <br />
-          At ERAU-DB, our chapter of SASE is more than just a professional
-          development and diversity club. It is a warm and welcoming place where
-          you can experience camaraderie, support, and belonging. Join us, and
-          together, we can soar like Eagles and reach for the stars!
-        </p>
+    
+    <section id="gallery" class="tm-section-pad-top">
+      <div class="container tm-container-gallery">
+        <div class="row">
+          <div class="text-center col-12">
+              <h2 class="tm-text-primary tm-section-title mb-4">Gallery</h2>
+              <p class="mx-auto tm-section-desc">
+                Praesent sed pharetra lorem, blandit convallis mi. Aenean ornare elit ac metus lacinia, sed iaculis nibh semper. Pellentesque est urna, lobortis eu arcu a, aliquet tristique urna.
+              </p>
+          </div>            
+        </div>
+        <div class="row">
+            <div class="col-12">
+                <div class="mx-auto tm-gallery-container">
+                    <div class="grid tm-gallery">
+                      <a href="assets/Fall 2023/activitiesfair.jpg">
+                        <figure class="effect-honey tm-gallery-item">
+                          <img src="assets/Fall 2023/activitiesfair.jpg" alt="Image 1" class="img-fluid">
+                          <figcaption>
+                            <h2><i>Activities Fair<span><p>Fall 2023</p></span></i></h2>
+                          </figcaption>
+                        </figure>
+                      </a>
+                      <a href="assets/Fall 2023/amf.jpg">
+                        <figure class="effect-honey tm-gallery-item">
+                          <img src="assets/Fall 2023/amf.jpg" alt="Image 2" class="img-fluid">
+                          <figcaption>
+                            <h2><i>Autumn Moon Festival<span><p>Fall 2023</p></span></i></h2>
+                          </figcaption>
+                        </figure>
+                      </a>
+                      <a href="assets/Fall 2023/beach.jpg">
+                        <figure class="effect-honey tm-gallery-item">
+                          <img src="assets/Fall 2023/beach.jpg" alt="Image 3" class="img-fluid">
+                          <figcaption>
+                            <h2><i>Beach & Bonfire Social<span><p>Fall 2023</p></span></i></h2>                          </figcaption>
+                        </figure>
+                      </a>
+                      <a href="assets/Fall 2023/dumplingsboba.jpg">
+                        <figure class="effect-honey tm-gallery-item">
+                          <img src="assets/Fall 2023/dumplingsboba.jpg" alt="Image 4" class="img-fluid">
+                          <figcaption>
+                            <h2><i>Dumplings & Boba Fundraiser<span><p>Fall 2023</p></span></i></h2>                          </figcaption>
+                        </figure>
+                      </a>
+                      <a href="assets/Fall 2023/eraunity.jpg">
+                        <figure class="effect-honey tm-gallery-item">
+                          <img src="assets/Fall 2023/eraunity.jpg" alt="Image 5" class="img-fluid">
+                          <figcaption>
+                            <h2><i>ERAUnity Social<span><p>Fall 2023</p></span></i></h2>                          </figcaption>
+                        </figure>
+                      </a>
+                      <a href="assets/Fall 2023/internpanel.jpg">
+                        <figure class="effect-honey tm-gallery-item">
+                          <img src="assets/Fall 2023/internpanel.jpg" alt="Image 6" class="img-fluid">
+                          <figcaption>
+                            <h2><i>Intern Panel<span><p>Fall 2023</p></span></i></h2>                          </figcaption>
+                        </figure>
+                      </a>
+                      <a href="assets/Fall 2023/minigolf.jpg">
+                        <figure class="effect-honey tm-gallery-item">
+                          <img src="assets/Fall 2023/minigolf.jpg" alt="Image 7" class="img-fluid">
+                          <figcaption>
+                            <h2><i>Mini-golf Social<span><p>Fall 2023</p></span></i></h2>                          </figcaption>
+                        </figure>
+                      </a>
+                      <a href="assets/Fall 2023/nc.jpg">
+                        <figure class="effect-honey tm-gallery-item">
+                          <img src="assets/Fall 2023/nc.jpg" alt="Image 8" class="img-fluid">
+                          <figcaption>
+                            <h2><i>National Convention<span><p>Fall 2023</p></span></i></h2>                          </figcaption>
+                        </figure>
+                      </a>
+                    </div>
+                </div>                
+            </div>        
+          </div>
       </div>
     </section>
 
-    <section class="events" id="events">
-      <div class="events__content">
-        <h1>Gallery</h1>
+    <!-- Contact -->
+    <section id="contact" class="tm-section-pad-top tm-parallax-2">
+    
+      <div class="container tm-container-contact">
+        <div class="contact-overlay"></div>
+        
+        <div class="row">
+            
+            <div class="text-center col-12">
+                <h2 class="tm-section-title mb-4">Contact Us</h2>
+                <p class="mb-5">
+                  If you have any questions, comments, or concerns, please feel free to reach 
+                </p><br>
+            </div>
+            
+            
+            <div class="text-center col-12">
+                <div class="contact-item">
+                  <a rel="nofollow" href="https://www.instagram.com/saseeraudb/" class="item-link" target="_blank">
+                      <i class="fab fa-3x fa-instagram "></i>
+                      <span class="mb-0"></span>
+                  </a>   
+                  
+                  <a rel="nofollow" href="https://www.linkedin.com/company/eraudbsase/" class="item-link" target="_blank">
+                      <i class="fab fa-3x fa-linkedin"></i>
+                      <span class="mb-0"></span>
+                  </a>              
+
+
+
+                  <a rel="nofollow" href="https://discord.gg/SRqxkjCMTV" class="item-link" target="_blank">
+                      <i class="fab fa-3x fa-discord"></i>
+                      <span class="mb-0"></span>
+                  </a>              
+
+                
+
+                  <a rel="nofollow" href="mailto:erau.daytonabeach@saseconnect.org" class="item-link" target="_blank">
+                      <i class="fas fa-3x fa-envelope-square"></i>
+
+                  </a>              
+
+                
+
+            
+            </div>
+            
+            
+        </div><!-- row ending -->
+        
       </div>
 
-      <div class="events__img">
-        <ul class="results">
-          <li class="result">
-            <a><img src="/assets/photo-1.png" width="500" alt="" /></a>
-          </li>
-          <li class="result">
-            <a><img src="/assets/photo-2.png" width="500" alt="" /></a>
-          </li>
-          <li class="result">
-            <a><img src="/assets/photo-3.png" width="500" alt="" /></a>
-          </li>
-          <li class="result">
-            <a><img src="/assets/photo-4.png" width="500" alt="" /></a>
-          </li>
-          <li class="result">
-            <a><img src="/assets/photo-5.png" width="500" alt="" /></a>
-          </li>
-          <li class="result">
-            <a><img src="/assets/photo-6.png" width="500" alt="" /></a>
-          </li>
-          <li class="result">
-            <a><img src="/assets/photo-7.png" width="500" alt="" /></a>
-          </li>
-          <li class="result">
-            <a><img src="/assets/photo-8.png" width="500" alt="" /></a>
-          </li>
-          <li class="result">
-            <a><img src="/assets/photo-9.png" width="500" alt="" /></a>
-          </li>
-          <li class="result">
-            <a><img src="/assets/photo-10.png" width="500" alt="" /></a>
-          </li>
-          <li class="result">
-            <a><img src="/assets/photo-11.png" width="500" alt="" /></a>
-          </li>
-          <li class="result">
-            <a><img src="/assets/photo-12.png" width="500" alt="" /></a>
-          </li>
-        </ul>
-      </div>
+      	<footer class="text-center small tm-footer">
+          <p class="mb-0">
+          Created by Jim Pamplona. Template Inspiration from 
+          
+<a rel="nofollow" href="https://www.tooplate.com" title="HTML templates">TOOPLATE</a></p>
+        </footer>
+
     </section>
+    
+    <script src="js/jquery-1.9.1.min.js"></script>     
+    <script src="slick/slick.min.js"></script>
+    <script src="magnific-popup/jquery.magnific-popup.min.js"></script>
+    <script src="js/easing.min.js"></script>
+    <script src="js/jquery.singlePageNav.min.js"></script>     
+    <script src="js/bootstrap.min.js"></script> 
+    <script>
 
-    <section class="leadership" id="leadership">
-      <div class="leadership__content">
-        <h1>Executive Board</h1>
-      </div>
-      <div class="leadership__img">
-        <ul>
-          <li>
-            <img
-              src="/assets/img-avatar.png"
-              alt="president"
-              style="width: 100%"
-            />
-            <div class="leadership__img-description">
-              <h4><b>Cindy Nguyen</b></h4>
-              <p>President</p>
-            </div>
-          </li>
-          <li>
-            <img
-              src="/assets/img-avatar.png"
-              alt="vice-president"
-              style="width: 100%"
-            />
-            <div class="leadership__img-description">
-              <h4><b>Sahil Singh</b></h4>
-              <p>Vice President</p>
-            </div>
-          </li>
-          <li>
-            <img
-              src="/assets/img-avatar.png"
-              alt="secretary"
-              style="width: 100%"
-            />
-            <div class="leadership__img-description">
-              <h4><b>Manas Thakkar</b></h4>
-              <p>Secretary</p>
-            </div>
-          </li>
-          <li>
-            <img
-              src="/assets/img-avatar.png"
-              alt="treasurer"
-              style="width: 100%"
-            />
-            <div class="leadership__img-description">
-              <h4><b>Abdulla Alakberi</b></h4>
-              <p>Treasurer</p>
-            </div>
-          </li>
-          <li>
-            <img
-              src="/assets/img-avatar.png"
-              alt="events-coordinator"
-              style="width: 100%"
-            />
-            <div class="leadership__img-description">
-              <h4><b>Bhumi Hamal</b></h4>
-              <p>Events Coordinator</p>
-            </div>
-          </li>
-          <li>
-            <img
-              src="/assets/img-avatar.png"
-              alt="public-relations"
-              style="width: 100%"
-            />
-            <div class="leadership__img-description">
-              <h4><b>Megan Chann</b></h4>
-              <p>Public Relations</p>
-            </div>
-          </li>
-          <li>
-            <img
-              src="/assets/img-avatar.png"
-              alt="webmaster"
-              style="width: 100%"
-            />
-            <div class="leadership__img-description">
-              <h4><b>Jim Pamplona</b></h4>
-              <p>Webmaster</p>
-            </div>
-          </li>
-        </ul>
-      </div>
-    </section>
+      function getOffSet(){
+        var _offset = 450;
+        var windowHeight = window.innerHeight;
 
-    <section class="back-button">
-      <button>
-        <a href="#home"><img src="assets/arrow.png" alt="" /></a>
-      </button>
-    </section>
+        if(windowHeight > 500) {
+          _offset = 400;
+        } 
+        if(windowHeight > 680) {
+          _offset = 300
+        }
+        if(windowHeight > 830) {
+          _offset = 210;
+        }
 
-    <script type="module" src="/js/main.js"></script>
+        return _offset;
+      }
+
+      function setParallaxPosition($doc, multiplier, $object){
+        var offset = getOffSet();
+        var from_top = $doc.scrollTop(),
+          bg_css = 'center ' +(multiplier * from_top - offset) + 'px';
+        $object.css({"background-position" : bg_css });
+      }
+
+      // Parallax function
+      // Adapted based on https://codepen.io/roborich/pen/wpAsm        
+      var background_image_parallax = function($object, multiplier, forceSet){
+        multiplier = typeof multiplier !== 'undefined' ? multiplier : 0.5;
+        multiplier = 1 - multiplier;
+        var $doc = $(document);
+        // $object.css({"background-attatchment" : "fixed"});
+
+        if(forceSet) {
+          setParallaxPosition($doc, multiplier, $object);
+        } else {
+          $(window).scroll(function(){          
+            setParallaxPosition($doc, multiplier, $object);
+          });
+        }
+      };
+
+      var background_image_parallax_2 = function($object, multiplier){
+        multiplier = typeof multiplier !== 'undefined' ? multiplier : 0.5;
+        multiplier = 1 - multiplier;
+        var $doc = $(document);
+        $object.css({"background-attachment" : "fixed"});
+        
+        $(window).scroll(function(){
+          if($(window).width() > 768) {
+            var firstTop = $object.offset().top,
+                pos = $(window).scrollTop(),
+                yPos = Math.round((multiplier * (firstTop - pos)) - 186);              
+
+            var bg_css = 'center ' + yPos + 'px';
+
+            $object.css({"background-position" : bg_css });
+          } else {
+            $object.css({"background-position" : "center" });
+          }
+        });
+      };
+      
+      $(function(){
+        // Hero Section - Background Parallax
+        background_image_parallax($(".tm-parallax"), 0.30, false);
+        background_image_parallax_2($("#contact"), 0.80);   
+        background_image_parallax_2($("#leadership"), 0.80);   
+        
+        // Handle window resize
+        window.addEventListener('resize', function(){
+          background_image_parallax($(".tm-parallax"), 0.30, true);
+        }, true);
+
+        // Detect window scroll and update navbar
+        $(window).scroll(function(e){          
+          if($(document).scrollTop() > 120) {
+            $('.tm-navbar').addClass("scroll");
+          } else {
+            $('.tm-navbar').removeClass("scroll");
+          }
+        });
+        
+        // Close mobile menu after click 
+        $('#tmNav a').on('click', function(){
+          $('.navbar-collapse').removeClass('show'); 
+        })
+
+        // Scroll to corresponding section with animation
+        $('#tmNav').singlePageNav({
+          'easing': 'easeInOutExpo',
+          'speed': 600
+        });        
+        
+        // Add smooth scrolling to all links
+        // https://www.w3schools.com/howto/howto_css_smooth_scroll.asp
+        $("a").on('click', function(event) {
+          if (this.hash !== "") {
+            event.preventDefault();
+            var hash = this.hash;
+
+            $('html, body').animate({
+              scrollTop: $(hash).offset().top
+            }, 600, 'easeInOutExpo', function(){
+              window.location.hash = hash;
+            });
+          } // End if
+        });
+
+        // Pop up
+        $('.tm-gallery').magnificPopup({
+          delegate: 'a',
+          type: 'image',
+          gallery: { enabled: true }
+        });
+
+        $('.tm-leadership-carousel').slick({
+          dots: true,
+          prevArrow: false,
+          nextArrow: false,
+          infinite: false,
+          slidesToShow: 3,
+          slidesToScroll: 1,
+          responsive: [
+            {
+              breakpoint: 992,
+              settings: {
+                slidesToShow: 2
+              }
+            },
+            {
+              breakpoint: 768,
+              settings: {
+                slidesToShow: 2
+              }
+            }, 
+            {
+              breakpoint: 480,
+              settings: {
+                  slidesToShow: 1
+              }                 
+            }
+          ]
+        });
+
+        // Gallery
+        $('.tm-gallery').slick({
+          dots: true,
+          infinite: false,
+          slidesToShow: 5,
+          slidesToScroll: 2,
+          responsive: [
+          {
+            breakpoint: 1199,
+            settings: {
+              slidesToShow: 4,
+              slidesToScroll: 2
+            }
+          },
+          {
+            breakpoint: 991,
+            settings: {
+              slidesToShow: 3,
+              slidesToScroll: 2
+            }
+          },
+          {
+            breakpoint: 767,
+            settings: {
+              slidesToShow: 2,
+              slidesToScroll: 1
+            }
+          },
+          {
+            breakpoint: 480,
+            settings: {
+              slidesToShow: 1,
+              slidesToScroll: 1
+            }
+          }
+        ]
+        });
+      });
+    </script>
   </body>
 </html>
