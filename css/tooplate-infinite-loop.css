@@ -76,8 +76,8 @@ blockquote {
 }
 
 .tm-content-box {
-  padding-top: 20px;
-  padding-bottom: 40px;
+  padding-top: 10px;
+  padding-bottom: 10px;
 }
 
 .tm-text-primary {
@@ -340,11 +340,15 @@ blockquote {
 
 .tm-hero-text-container-button #button1:hover{
   transform: translateY(-5px);
-  background-size: 160%;
+  background-color: #ffffff;
+  background-image: none;
+  color: #1c1c1c;
 }
 .tm-hero-text-container-button #button2:hover{
   transform: translateY(-5px);
-  background-size: 160%;
+  background-color: #ffffff;
+  background-image: none;
+  color: #1c1c1c;
 }
 
 
@@ -366,10 +370,26 @@ blockquote {
 }
 
 @media (max-width:1000px){
+.tm-icon {
+  padding-top: 20px;
+}
+
 .tm-text-primary  {
   text-align: center;
 
 }
+.tm-intro-text {
+  font-size: 1.2rem;
+
+  margin-left: 0px;
+  margin-right: 15px;
+}
+
+.tm-content-box{
+  padding-top: 0px;
+  padding-bottom: 0px;
+}
+
 }
 
 .tm-icon {
@@ -457,7 +477,7 @@ blockquote {
 .tm-section-desc {
   max-width: 650px;
   width: 100%;
-  font-size: 0.9rem;
+  font-size: 1.2rem;
 }
 
 .tm-gallery-container {
