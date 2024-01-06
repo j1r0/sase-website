@@ -9,36 +9,44 @@ https://www.tooplate.com/view/2117-infinite-loop
 @import url("https://fonts.googleapis.com/css?family=Raleway:100,300,400,500,700,900");
 
 :root {
+  --gradient-base: hsla(227, 0%, 71%, 1);
 
-  --gradient-base: hsla(227,0%,71%,1);
+  --gradient-1: radial-gradient(
+      at 100% 100%,
+      hsla(24, 55%, 86%, 1) 0px,
+      transparent 50%
+    ),
+    radial-gradient(at 0% 91%, hsla(28, 91%, 54%, 1) 0px, transparent 50%),
+    radial-gradient(at 6% 10%, hsla(203, 17%, 26%, 1) 0px, transparent 50%),
+    radial-gradient(at 79% 74%, hsla(13, 48%, 45%, 1) 0px, transparent 50%),
+    radial-gradient(at 9% 33%, hsla(205, 17%, 32%, 1) 0px, transparent 50%),
+    radial-gradient(at 88% 19%, hsla(27, 29%, 43%, 1) 0px, transparent 50%),
+    radial-gradient(at 80% 100%, hsla(26, 51%, 62%, 1) 0px, transparent 50%);
 
-  --gradient-1: radial-gradient(at 100% 100%, hsla(24,55%,86%,1) 0px, transparent 50%),
-  radial-gradient(at 0% 91%, hsla(28,91%,54%,1) 0px, transparent 50%),
-  radial-gradient(at 6% 10%, hsla(203,17%,26%,1) 0px, transparent 50%),
-  radial-gradient(at 79% 74%, hsla(13,48%,45%,1) 0px, transparent 50%),
-  radial-gradient(at 9% 33%, hsla(205,17%,32%,1) 0px, transparent 50%),
-  radial-gradient(at 88% 19%, hsla(27,29%,43%,1) 0px, transparent 50%),
-  radial-gradient(at 80% 100%, hsla(26,51%,62%,1) 0px, transparent 50%);
-
-  --gradient-2:radial-gradient(at 0% 0%, hsla(235,10%,43%,1) 0px, transparent 50%),
-  radial-gradient(at 90% 42%, hsla(205,17%,32%,1) 0px, transparent 50%),
-  radial-gradient(at 4% 95%, hsla(13,48%,45%,1) 0px, transparent 50%),
-  radial-gradient(at 3% 22%, hsla(27,29%,43%,1) 0px, transparent 50%),
-  radial-gradient(at 36% 0%, hsla(26,51%,62%,1) 0px, transparent 50%),
-  radial-gradient(at 79% 100%, hsla(27,91%,54%,1) 0px, transparent 50%),
-  radial-gradient(at 85% 1%, hsla(205,17%,32%,1) 0px, transparent 50%),
-  radial-gradient(at 100% 18%, hsla(203,17%,26%,1) 0px, transparent 50%),
-  radial-gradient(at 100% 100%, hsla(24,55%,86%,1) 0px, transparent 50%);
+  --gradient-2: radial-gradient(
+      at 0% 0%,
+      hsla(235, 10%, 43%, 1) 0px,
+      transparent 50%
+    ),
+    radial-gradient(at 90% 42%, hsla(205, 17%, 32%, 1) 0px, transparent 50%),
+    radial-gradient(at 4% 95%, hsla(13, 48%, 45%, 1) 0px, transparent 50%),
+    radial-gradient(at 3% 22%, hsla(27, 29%, 43%, 1) 0px, transparent 50%),
+    radial-gradient(at 36% 0%, hsla(26, 51%, 62%, 1) 0px, transparent 50%),
+    radial-gradient(at 79% 100%, hsla(27, 91%, 54%, 1) 0px, transparent 50%),
+    radial-gradient(at 85% 1%, hsla(205, 17%, 32%, 1) 0px, transparent 50%),
+    radial-gradient(at 100% 18%, hsla(203, 17%, 26%, 1) 0px, transparent 50%),
+    radial-gradient(at 100% 100%, hsla(24, 55%, 86%, 1) 0px, transparent 50%);
 }
 
 body {
-	font-family: "Raleway", sans-serif;
-	font-size: 1.2em;
+  font-family: "Raleway", sans-serif;
+  font-size: 1.2em;
   color: #707070;
   margin: 0;
   padding: 0;
   overflow-x: hidden;
 }
+
 button {
   outline: none !important;
 }
@@ -109,12 +117,11 @@ blockquote {
   background-color: transparent;
   transition: all 0.3s ease;
 }
+
 .home__logo {
   cursor: pointer;
   padding: 8px 0 8px 3vw;
   display: flex;
-
-  
 }
 
 .home__logo-sase {
@@ -130,10 +137,10 @@ blockquote {
   height: 4.5vw;
   min-height: 40px;
 }
+
 .tm-navbar.scroll {
   background-color: rgba(0, 0, 0, 0.345);
-  box-shadow: 0 0 1em rgba(0, 0, 0, .4);
-
+  box-shadow: 0 0 1em rgba(0, 0, 0, 0.4);
 }
 
 .navbar-brand {
@@ -141,7 +148,6 @@ blockquote {
   font-size: 1.4rem;
   font-weight: bold;
 }
-
 
 .navbar-brand:hover,
 .tm-navbar.scroll .navbar-brand:hover {
@@ -162,75 +168,54 @@ blockquote {
   color: white;
 }
 
-
 .tm-navbar.scroll .tm-nav-link {
   color: white;
 }
-
 
 .tm-navbar.scroll .tm-nav-link:hover,
 .tm-navbar.scroll .tm-nav-link.current,
 .tm-nav-link:hover {
   color: #1c1c1c;
- background-color: white;
-
-
-
+  background-color: white;
 }
-/* Initial styling for the navbar-toggler-icon */
+
 .navbar-toggler {
-  border: none; /* Remove default button border if needed */
-  background: none; /* Remove default button background if needed */
-  cursor: pointer; /* Ensure cursor changes on hover */
+  border: none;
+  background: none;
+  cursor: pointer;
 }
 
 .navbar-toggler-icon {
   color: white;
-  padding-left: 10px;
-  padding-right: 10px;
-  padding-top: 6px;
+  padding-top: 4.5px;
+
   transition: transform 0.5s ease;
 }
 
-/* Style when the icon is hovered */
-.navbar-toggler:hover .navbar-toggler-icon {
+.navbar-toggler:hover .navbar-toggler-icon,
+.navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   color: #1c1c1c;
+  transform: rotateZ(90deg);
 }
-
-/* Rotation on click (when the checkbox is checked) */
-.navbar-toggler:checked .navbar-toggler-icon {
-  transform: rotateZ(90deg); /* Rotate the icon 90 degrees */
-  color: #1c1c1c;
-}
-
-
-
-
-
-
 
 .tm-navbar.scroll .navbar-toggler {
   background-color: transparent;
 }
 
-.tm-navbar.scroll .navbar-toggler-icon {
-  color: #fff;
+.tm-navbar.scroll .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
+  color: #1c1c1c;
   transition: 0.5s ease;
-}
-.tm-navbar.scroll .navbar-toggler-icon:hover{
-   color: #1c1c1c;
 }
 
 /* Hero */
 
 #home {
-	background-color: #222;
+  background-color: #222;
   background-image: url(/sase-bkg.png);
   background-repeat: no-repeat;
   height: 100vh;
   min-height: 375px;
   position: relative;
-
 }
 
 @media (min-height: 600px) and (min-width: 1920px) {
@@ -270,8 +255,9 @@ blockquote {
   flex-flow: column;
   justify-content: center;
 }
+
 .tm-hero-text-container img {
-  width:  70vw;
+  width: 70vw;
   max-width: 800px;
   margin: 0 0 20px 0;
 }
@@ -280,8 +266,6 @@ blockquote {
   font-size: min(40px, 2.5vw);
   font-weight: bold;
 }
-
-
 
 .tm-intro-next {
   position: absolute;
@@ -299,13 +283,13 @@ blockquote {
     bottom: 20px;
   }
 }
-.tm-hero-text-container-button form{
+
+.tm-hero-text-container-button form {
   display: inline;
   text-decoration: none;
 }
 
-.tm-hero-text-container-button button { 
-  
+.tm-hero-text-container-button button {
   width: 200px;
   min-width: 180px;
   min-height: 50px;
@@ -316,42 +300,38 @@ blockquote {
   font-weight: bold;
   cursor: pointer;
   background: transparent;
-  color : #fff;
+  color: #fff;
   overflow: hidden;
   font-size: 20px;
 }
-
-
 
 .tm-hero-text-container-button #button1 {
   border: none;
   background-color: var(--gradient-base);
   background-image: var(--gradient-1);
   transition: all 0.5s ease;
-  
 }
 
-.tm-hero-text-container-button #button2{
+.tm-hero-text-container-button #button2 {
   border: none;
   background-color: var(--gradient-base);
   background-image: var(--gradient-2);
   transition: all 0.5s ease;
 }
 
-.tm-hero-text-container-button #button1:hover{
-  transform: translateY(-5px);
-  background-color: #ffffff;
-  background-image: none;
-  color: #1c1c1c;
-}
-.tm-hero-text-container-button #button2:hover{
+.tm-hero-text-container-button #button1:hover {
   transform: translateY(-5px);
   background-color: #ffffff;
   background-image: none;
   color: #1c1c1c;
 }
 
-
+.tm-hero-text-container-button #button2:hover {
+  transform: translateY(-5px);
+  background-color: #ffffff;
+  background-image: none;
+  color: #1c1c1c;
+}
 
 /* Introduction */
 
@@ -369,27 +349,26 @@ blockquote {
   margin-left: 10px;
 }
 
-@media (max-width:1000px){
-.tm-icon {
-  padding-top: 20px;
-}
+@media (max-width: 1000px) {
+  .tm-icon {
+    padding-top: 20px;
+  }
 
-.tm-text-primary  {
-  text-align: center;
+  .tm-text-primary {
+    text-align: center;
+  }
 
-}
-.tm-intro-text {
-  font-size: 1.2rem;
+  .tm-intro-text {
+    font-size: 1.2rem;
 
-  margin-left: 0px;
-  margin-right: 15px;
-}
+    margin-left: 0px;
+    margin-right: 15px;
+  }
 
-.tm-content-box{
-  padding-top: 0px;
-  padding-bottom: 0px;
-}
-
+  .tm-content-box {
+    padding-top: 0px;
+    padding-bottom: 0px;
+  }
 }
 
 .tm-icon {
@@ -398,7 +377,7 @@ blockquote {
 }
 
 .tm-continue {
-	padding: 20px 0 30px 0;
+  padding: 20px 0 30px 0;
 }
 
 /* leadership */
@@ -431,9 +410,8 @@ blockquote {
   left: 0;
   right: 0;
   bottom: 0;
-  z-index: 0; 
+  z-index: 0;
 }
-
 
 .tm-leadership-carousel {
   max-width: 1050px;
@@ -453,22 +431,18 @@ blockquote {
   margin: 15px 0;
 }
 
-
-.tm-leadership-item  {
+.tm-leadership-item {
   text-align: center;
   font-size: 1.5rem;
   transition: 0.5s ease;
 }
 
-.tm-leadership-item img{
+.tm-leadership-item img {
   height: 70%;
   width: 70%;
-
-
 }
 
-.tm-leadership-item:hover{
-
+.tm-leadership-item:hover {
   transform: scale(1.1);
 }
 
@@ -548,7 +522,7 @@ blockquote {
   padding: 2em;
   color: #fff;
   text-transform: uppercase;
-  font-size: .8em;
+  font-size: 0.8em;
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
 }
@@ -663,8 +637,8 @@ figure.effect-honey:hover h2 i {
 }
 
 .tm-container-gallery {
-	padding-top: 30px;
-	}
+  padding-top: 30px;
+}
 
 /* Contact */
 
@@ -690,14 +664,12 @@ figure.effect-honey:hover h2 i {
   left: 0;
   right: 0;
   bottom: 0;
-  z-index: 0; 
+  z-index: 0;
 }
 
 .item-link {
   margin: 0 30px;
 }
-
-
 
 .item-link i,
 .item-link span {
@@ -710,8 +682,6 @@ figure.effect-honey:hover h2 i {
   color: #1c1c1c;
 }
 
-
-
 .tm-footer {
   position: absolute;
   bottom: 50px;
@@ -721,11 +691,11 @@ figure.effect-honey:hover h2 i {
 }
 
 .tm-footer a {
-	color: #fff;
+  color: #fff;
 }
 
 .tm-footer a:hover {
-	color: #1c1c1c;
+  color: #1c1c1c;
 }
 
 .tm-footer-link {
@@ -789,7 +759,6 @@ p {
 }
 
 @media (max-width: 767px) {
-
   .navbar-nav {
     max-width: 200px;
     text-align: right;
@@ -801,16 +770,16 @@ p {
     border-radius: 3px;
   }
 
-
   .navbar-collapse .nav-link {
     color: white;
 
-	padding-right: 20px;
+    padding-right: 20px;
   }
+
   .navbar-collapse .nav-link:hover {
     color: #1c1c1c;
 
-	padding-right: 20px;
+    padding-right: 20px;
   }
 }
 
