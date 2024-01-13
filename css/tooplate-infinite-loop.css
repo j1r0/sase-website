@@ -49,6 +49,9 @@ body {
 
 button {
   outline: none !important;
+  background: none;
+  text-decoration: none;
+  border: none;
 }
 
 a {
@@ -119,20 +122,29 @@ blockquote {
 }
 
 .home__logo {
-  cursor: pointer;
+  cursor:default;
   padding: 8px 0 8px 3vw;
   display: flex;
 }
+.separator {
+  transform: translateY(15%) scaleY(300%) scaleX(20%);
+  background-color: #fff;
+}
 
+.button__logo {
+  cursor:pointer;
+  transition: all 0.3s ease;
+}
+.button__logo:hover {
+  transform: scale(1.1);
+}
 .home__logo-sase {
-  padding-right: 1vw;
   height: 4.5vw;
   min-height: 40px;
 }
 
 .home__logo-erau {
-  padding-left: 1vw;
-  border-left: 2px solid #ffffffa2;
+
   border-radius: 20;
   height: 4.5vw;
   min-height: 40px;
@@ -668,7 +680,7 @@ figure.effect-honey:hover h2 i {
 }
 
 .item-link {
-  margin: 0 30px;
+  margin: 0 3vw;
 }
 
 .item-link i,
@@ -684,7 +696,7 @@ figure.effect-honey:hover h2 i {
 
 .tm-footer {
   position: absolute;
-  bottom: 50px;
+  bottom: 30px;
   left: 0;
   right: 0;
   padding: 0 15px;
