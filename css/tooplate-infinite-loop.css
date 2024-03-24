@@ -6,46 +6,24 @@ https://www.tooplate.com/view/2117-infinite-loop
 
 */
 
-@import url("https://fonts.googleapis.com/css?family=Raleway:100,300,400,500,700,900");
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
 
 :root {
-  --gradient-base: hsla(227, 0%, 71%, 1);
-
-  --gradient-1: radial-gradient(
-      at 100% 100%,
-      hsla(24, 55%, 86%, 1) 0px,
-      transparent 50%
-    ),
-    radial-gradient(at 0% 91%, hsla(28, 91%, 54%, 1) 0px, transparent 50%),
-    radial-gradient(at 6% 10%, hsla(203, 17%, 26%, 1) 0px, transparent 50%),
-    radial-gradient(at 79% 74%, hsla(13, 48%, 45%, 1) 0px, transparent 50%),
-    radial-gradient(at 9% 33%, hsla(205, 17%, 32%, 1) 0px, transparent 50%),
-    radial-gradient(at 88% 19%, hsla(27, 29%, 43%, 1) 0px, transparent 50%),
-    radial-gradient(at 80% 100%, hsla(26, 51%, 62%, 1) 0px, transparent 50%);
-
-  --gradient-2: radial-gradient(
-      at 0% 0%,
-      hsla(235, 10%, 43%, 1) 0px,
-      transparent 50%
-    ),
-    radial-gradient(at 90% 42%, hsla(205, 17%, 32%, 1) 0px, transparent 50%),
-    radial-gradient(at 4% 95%, hsla(13, 48%, 45%, 1) 0px, transparent 50%),
-    radial-gradient(at 3% 22%, hsla(27, 29%, 43%, 1) 0px, transparent 50%),
-    radial-gradient(at 36% 0%, hsla(26, 51%, 62%, 1) 0px, transparent 50%),
-    radial-gradient(at 79% 100%, hsla(27, 91%, 54%, 1) 0px, transparent 50%),
-    radial-gradient(at 85% 1%, hsla(205, 17%, 32%, 1) 0px, transparent 50%),
-    radial-gradient(at 100% 18%, hsla(203, 17%, 26%, 1) 0px, transparent 50%),
-    radial-gradient(at 100% 100%, hsla(24, 55%, 86%, 1) 0px, transparent 50%);
+  --main: #3D5C8B;
+  --secondary: #E4C377;
+  --tertiary: #FAF6EA;
 }
 
 body {
-  font-family: "Raleway", sans-serif;
+  font-family: "Rubik";
+  font-weight: 100;
   font-size: 1.2em;
   color: #707070;
   margin: 0;
   padding: 0;
   overflow-x: hidden;
 }
+
 
 button {
   outline: none !important;
@@ -86,6 +64,7 @@ blockquote {
   padding-bottom: 40px;
 }
 
+
 .tm-content-box {
   padding-top: 10px;
   padding-bottom: 10px;
@@ -93,6 +72,7 @@ blockquote {
 
 .tm-text-primary {
   color: #1c1c1c;
+text-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
 }
 
 .tm-font-big {
@@ -103,6 +83,7 @@ blockquote {
   color: white;
   background-color: #1c1c1c;
   padding: 14px 30px;
+  
 }
 
 .tm-btn-primary:hover,
@@ -126,6 +107,7 @@ blockquote {
   padding: 8px 0 8px 3vw;
   display: flex;
 }
+
 .separator {
   transform: translateY(15%) scaleY(300%) scaleX(20%);
   background-color: #fff;
@@ -135,9 +117,11 @@ blockquote {
   cursor:pointer;
   transition: all 0.3s ease;
 }
+
 .button__logo:hover {
   transform: scale(1.1);
 }
+
 .home__logo-sase {
   height: 4.5vw;
   min-height: 40px;
@@ -226,39 +210,11 @@ blockquote {
   background-image: url(/sase-bkg.png);
   background-repeat: no-repeat;
   height: 100vh;
-  min-height: 375px;
+background-size: cover;
+  min-height: 1000px;
   position: relative;
 }
 
-@media (min-height: 600px) and (min-width: 1920px) {
-  #home {
-    background-size: cover;
-  }
-}
-
-@media (min-height: 830px) {
-  #home {
-    background-position: center -210px;
-  }
-}
-
-@media (min-height: 680px) and (max-height: 829px) {
-  #home {
-    background-position: center -300px;
-  }
-}
-
-@media (min-height: 500px) and (max-height: 679px) {
-  #home {
-    background-position: center -400px;
-  }
-}
-
-@media (max-height: 499px) {
-  #home {
-    background-position: center -450px;
-  }
-}
 
 .tm-hero-text-container {
   width: 100%;
@@ -272,11 +228,14 @@ blockquote {
   width: 70vw;
   max-width: 800px;
   margin: 0 0 20px 0;
+  filter: drop-shadow(0px 10px 10px rgba(0, 0, 0, 0.25));
+
 }
 
 .tm-hero-text-container h2 {
   font-size: min(40px, 2.5vw);
-  font-weight: bold;
+  font-weight: 100;
+  font-style: italic;
 }
 
 .tm-intro-next {
@@ -312,43 +271,31 @@ blockquote {
   font-weight: bold;
   cursor: pointer;
   background: transparent;
-  color: #fff;
+  color: var(--secondary);
   overflow: hidden;
   font-size: 20px;
-}
 
-.tm-hero-text-container-button #button1 {
-  border: none;
-  background-color: var(--gradient-base);
-  background-image: var(--gradient-1);
+  background: var(--main);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 10px;
   transition: all 0.5s ease;
 }
 
-.tm-hero-text-container-button #button2 {
-  border: none;
-  background-color: var(--gradient-base);
-  background-image: var(--gradient-2);
-  transition: all 0.5s ease;
-}
 
-.tm-hero-text-container-button #button1:hover {
-  transform: translateY(-5px);
-  background-color: #ffffff;
-  background-image: none;
-  color: #1c1c1c;
-}
 
-.tm-hero-text-container-button #button2:hover {
+.tm-hero-text-container-button #button1:hover, #button2:hover {
   transform: translateY(-5px);
-  background-color: #ffffff;
+  background-color: var(--secondary);
   background-image: none;
-  color: #1c1c1c;
+  color: var(--main);
 }
 
 /* Introduction */
 
 #introduction {
   padding-bottom: 100px;
+
+
 }
 
 .tm-section-title {
@@ -396,9 +343,9 @@ blockquote {
 #leadership {
   color: white;
   background-color: var(--gradient-base);
-  background-image: var(--gradient-2);
+  background-image: url(/gradient-1.png);
   background-repeat: no-repeat;
-  background-size: 2000px 1200px;
+  background-size: cover;
   position: relative;
 }
 
@@ -458,10 +405,10 @@ blockquote {
   transform: scale(1.1);
 }
 
-/* Work */
+/* Gallery */
 
 .tm-section-desc {
-  max-width: 650px;
+  max-width: 800px;
   width: 100%;
   font-size: 1.2rem;
 }
@@ -656,11 +603,10 @@ figure.effect-honey:hover h2 i {
 
 #contact {
   color: white;
-  background-color: var(--gradient-base);
-  background-image: var(--gradient-1);
+  background-image: url(/gradient-2.png);
   background-position: center;
   background-repeat: no-repeat;
-  background-size: 100% 1500px;
+  background-size: cover;
   min-height: 500px;
   position: relative;
   padding-bottom: 100px;
