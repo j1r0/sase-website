@@ -77,6 +77,7 @@ text-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
 
 .tm-font-big {
   font-size: 1.25rem;
+
 }
 
 .tm-btn-primary {
@@ -106,12 +107,9 @@ text-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
   cursor:default;
   padding: 8px 0 8px 3vw;
   display: flex;
+
 }
 
-.separator {
-  transform: translateY(15%) scaleY(300%) scaleX(20%);
-  background-color: #fff;
-}
 
 .button__logo {
   cursor:pointer;
@@ -121,6 +119,10 @@ text-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
 .button__logo:hover {
   transform: scale(1.1);
 }
+.separator {
+  height: 9px;
+align-self: center;
+}
 
 .home__logo-sase {
   height: 4.5vw;
@@ -128,7 +130,6 @@ text-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
 }
 
 .home__logo-erau {
-
   border-radius: 20;
   height: 4.5vw;
   min-height: 40px;
@@ -236,6 +237,7 @@ background-size: cover;
   font-size: min(40px, 2.5vw);
   font-weight: 100;
   font-style: italic;
+  text-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
 }
 
 .tm-intro-next {
@@ -333,10 +335,11 @@ background-size: cover;
 .tm-icon {
   display: block;
   color: #1c1c1c;
+  filter: drop-shadow(0px 10px 10px rgba(0, 0, 0, 0.25));
 }
 
 .tm-continue {
-  padding: 20px 0 30px 0;
+  padding: 20px 0 40px 0;
 }
 
 /* leadership */
@@ -358,6 +361,7 @@ background-size: cover;
 .tm-leadership-content {
   position: relative;
   z-index: 100;
+  text-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
 }
 
 .tm-bg-overlay {
@@ -611,6 +615,7 @@ figure.effect-honey:hover h2 i {
   position: relative;
   padding-bottom: 100px;
   padding-top: 100px;
+  text-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
 }
 
 .contact-overlay {
@@ -635,9 +640,14 @@ figure.effect-honey:hover h2 i {
   transition: all 0.3s ease;
 }
 
-.item-link:hover i,
-.item-link:hover span {
-  color: #1c1c1c;
+#odd:hover i,
+#odd:hover span {
+  color: var(--main);
+}
+
+#even:hover i,
+#even:hover span {
+  color: var(--secondary);
 }
 
 .tm-footer {
